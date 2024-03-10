@@ -16,8 +16,8 @@ import static RedbusChallengeSolution.RedBusChallenegeSolution.driver;
 public class RedBusSolutionHelper {
     private static List<String> getWeekEndDates = new ArrayList<String>();
     private static By btnCalender = By.id("onwardCal");
-    private static By lblgetMonthYearHolidayDetails = By.xpath("(//div[contains(@class,'DayNavigator__CalendarHeader')]/div)[2]");
-    private static By btnRightArrow = By.xpath("//*[local-name()='svg']");
+    private static By lblgetMonthYearHolidayDetails = By.cssSelector("div[class*='DayNavigator__IconBlock-qj8jdz-2']:nth-child(2)");
+    private static By btnRightArrow = By.cssSelector("#Layer_1");
     private static By lblGetAllWeekends = By.cssSelector(".DayTiles__CalendarDaysSpan-sc-1xum02u-1.bwoYtA");
     private static final int waitTime = 50;
 
